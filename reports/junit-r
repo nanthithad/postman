@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Collection run" tests="3" time="1.188">
+  <testsuite name="Get data" id="aaad36ca-8b00-4796-b6e4-ee4218ebb367" timestamp="2025-09-23T09:27:38.022Z" tests="16" failures="0" errors="0" time="0.209">
+    <testcase name="Status code is 200" time="0.209" classname="GetData"/>
+    <testcase name="Response time under 2000ms" time="0.209" classname="GetData"/>
+    <testcase name="Content-Type is application/json" time="0.209" classname="GetData"/>
+    <testcase name="User response structure validation" time="0.209" classname="GetData"/>
+    <testcase name="Email format is valid" time="0.209" classname="GetData"/>
+    <testcase name="Website format is valid (domain check)" time="0.209" classname="GetData"/>
+    <testcase name="Phone format is valid" time="0.209" classname="GetData"/>
+    <testcase name="Address structure validation" time="0.209" classname="GetData"/>
+    <testcase name="Company structure validation" time="0.209" classname="GetData"/>
+    <testcase name="User ID 1 has expected values" time="0.209" classname="GetData"/>
+    <testcase name="User ID is positive number" time="0.209" classname="GetData"/>
+    <testcase name="Username is valid format" time="0.209" classname="GetData"/>
+    <testcase name="Zipcode format is valid" time="0.209" classname="GetData"/>
+    <testcase name="Extract user data" time="0.209" classname="GetData"/>
+    <testcase name="Log performance metrics" time="0.209" classname="GetData"/>
+    <testcase name="All validations completed" time="0.209" classname="GetData"/>
+  </testsuite>
+  <testsuite name="put call" id="18e67326-a93d-4a7e-8dd2-0d220ac91136" timestamp="2025-09-23T09:27:38.022Z" tests="2" failures="1" errors="0" time="0.391">
+    <testcase name="Status code is 200" time="0.391" classname="PutCall"/>
+    <testcase name="Status code is 201 Created" time="0.391" classname="PutCall">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e0664b36-8ef2-4f41-a943-98526225ea40.]]>
+        <![CDATA[Collection name: Collection run.]]>
+        <![CDATA[Request name: put call.]]>
+        <![CDATA[Test description: Status code is 201 Created.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 200
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="demo" id="365bdb40-e0ba-4652-b4ea-0e77fdd2cd35" timestamp="2025-09-23T09:27:38.022Z" tests="0" failures="0" errors="0" time="0.588"/>
+</testsuites>
