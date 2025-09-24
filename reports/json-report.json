@@ -7,7 +7,7 @@
     },
     "item": [
       {
-        "id": "c4790993-4fa5-4f29-87a5-9f87674dd740",
+        "id": "a4a7de98-811c-4079-bca7-88cb50238787",
         "name": "Get data",
         "request": {
           "description": {
@@ -35,7 +35,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "5567242d-a302-42d9-8e89-f700839d290e",
+              "id": "57630116-e7af-45b3-b943-909f75e14a5b",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -186,68 +186,13 @@
                 "",
                 ""
               ],
-              "_lastExecutionId": "07628fe6-2022-441e-b252-ae8d2d129264"
+              "_lastExecutionId": "8b7c5710-900d-44a9-b590-b60d23bb0c2a"
             }
           }
         ]
       },
       {
-        "id": "48c66bb2-9517-49ef-859c-1fd8d36096f5",
-        "name": "put call",
-        "request": {
-          "url": {
-            "protocol": "https",
-            "path": [
-              "todos",
-              "1"
-            ],
-            "host": [
-              "jsonplaceholder",
-              "typicode",
-              "com"
-            ],
-            "query": [],
-            "variable": []
-          },
-          "method": "PUT",
-          "body": {
-            "mode": "raw",
-            "raw": "  {\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"nannnn\",\r\n    \"completed\": true\r\n  }",
-            "options": {
-              "raw": {
-                "language": "json"
-              }
-            }
-          }
-        },
-        "response": [],
-        "event": [
-          {
-            "listen": "test",
-            "script": {
-              "id": "257a6bc9-47fc-45c1-bda8-8d2df553e3c2",
-              "type": "text/javascript",
-              "packages": {},
-              "exec": [
-                "// Test for successful 200 OK response\r",
-                "pm.test(\"Status code is 200\", function () {\r",
-                "    pm.response.to.have.status(200);\r",
-                "});\r",
-                "// Test for specific status code\r",
-                "\r",
-                "pm.test(\"Status code is 201 Created\", function () {\r",
-                "\r",
-                "pm.response.to.have.status(201);\r",
-                "\r",
-                "});"
-              ],
-              "_lastExecutionId": "d4c084a4-b657-4eaa-9fea-cd41cca5c5b3"
-            }
-          }
-        ]
-      },
-      {
-        "id": "ca3deeef-5405-406a-b686-561b9ced00c5",
+        "id": "eea84a96-01b0-4fa2-8e9f-72653056d806",
         "name": "demo",
         "request": {
           "url": {
@@ -293,7 +238,7 @@
     }
   },
   "environment": {
-    "id": "5be95273-9bdb-4fb0-80a8-da1e0f07eb34",
+    "id": "4e4df5aa-8a42-4052-8955-a028b1795d21",
     "values": [
       {
         "type": "any",
@@ -313,7 +258,7 @@
     ]
   },
   "globals": {
-    "id": "d0363e62-bae4-4703-83ac-497c08f5b18e",
+    "id": "886be8ff-b4f3-4c88-a3a2-815c474ebfc5",
     "values": []
   },
   "run": {
@@ -324,37 +269,37 @@
         "failed": 0
       },
       "items": {
-        "total": 3,
+        "total": 2,
         "pending": 0,
         "failed": 0
       },
       "scripts": {
-        "total": 2,
+        "total": 1,
         "pending": 0,
         "failed": 0
       },
       "prerequests": {
-        "total": 3,
+        "total": 2,
         "pending": 0,
         "failed": 0
       },
       "requests": {
-        "total": 3,
+        "total": 2,
         "pending": 0,
         "failed": 0
       },
       "tests": {
-        "total": 3,
+        "total": 2,
         "pending": 0,
         "failed": 0
       },
       "assertions": {
-        "total": 18,
+        "total": 16,
         "pending": 0,
-        "failed": 1
+        "failed": 0
       },
       "testScripts": {
-        "total": 2,
+        "total": 1,
         "pending": 0,
         "failed": 0
       },
@@ -365,10 +310,10 @@
       }
     },
     "timings": {
-      "responseAverage": 413.3333333333333,
-      "responseMin": 232,
-      "responseMax": 722,
-      "responseSd": 219.3708174656683,
+      "responseAverage": 475.5,
+      "responseMin": 319,
+      "responseMax": 632,
+      "responseSd": 156.5,
       "dnsAverage": 0,
       "dnsMin": 0,
       "dnsMax": 0,
@@ -377,25 +322,25 @@
       "firstByteMin": 0,
       "firstByteMax": 0,
       "firstByteSd": 0,
-      "started": 1758619620198,
-      "completed": 1758619621704
+      "started": 1758694969290,
+      "completed": 1758694970462
     },
     "executions": [
       {
         "cursor": {
           "position": 0,
           "iteration": 0,
-          "length": 3,
+          "length": 2,
           "cycles": 1,
           "empty": false,
           "eof": false,
           "bof": true,
           "cr": false,
-          "ref": "b63d3c90-0bf2-4aa5-84c5-c679e31407c5",
-          "httpRequestId": "f6a16390-fbb5-439b-a12b-708e5ceef504"
+          "ref": "c585f5d5-7f0d-4f8b-86e9-7878927e6b1b",
+          "httpRequestId": "e0034389-79d9-495c-8885-8aa72d1b91f9"
         },
         "item": {
-          "id": "c4790993-4fa5-4f29-87a5-9f87674dd740",
+          "id": "a4a7de98-811c-4079-bca7-88cb50238787",
           "name": "Get data",
           "request": {
             "description": {
@@ -423,7 +368,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "5567242d-a302-42d9-8e89-f700839d290e",
+                "id": "57630116-e7af-45b3-b943-909f75e14a5b",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -574,7 +519,7 @@
                   "",
                   ""
                 ],
-                "_lastExecutionId": "07628fe6-2022-441e-b252-ae8d2d129264"
+                "_lastExecutionId": "8b7c5710-900d-44a9-b590-b60d23bb0c2a"
               }
             }
           ]
@@ -616,7 +561,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "1278a0eb-77af-4b17-b5ac-448fe0453453",
+              "value": "4a157aad-4952-4d6e-aa3e-5ba2ed287bb3",
               "system": true
             },
             {
@@ -638,13 +583,13 @@
           "method": "GET"
         },
         "response": {
-          "id": "3541f18b-beb2-4026-9970-18930495227a",
+          "id": "48680d7a-0e91-4673-8ce5-d89b2cf92878",
           "status": "OK",
           "code": 200,
           "header": [
             {
               "key": "Date",
-              "value": "Tue, 23 Sep 2025 09:27:02 GMT"
+              "value": "Wed, 24 Sep 2025 06:19:02 GMT"
             },
             {
               "key": "Content-Type",
@@ -724,7 +669,7 @@
             },
             {
               "key": "Age",
-              "value": "993"
+              "value": "18410"
             },
             {
               "key": "cf-cache-status",
@@ -736,7 +681,7 @@
             },
             {
               "key": "CF-RAY",
-              "value": "9839010009b1f399-MAA"
+              "value": "98402afd5f5a7f40-MAA"
             },
             {
               "key": "alt-svc",
@@ -1258,10 +1203,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 232,
+          "responseTime": 319,
           "responseSize": 509
         },
-        "id": "c4790993-4fa5-4f29-87a5-9f87674dd740",
+        "id": "a4a7de98-811c-4079-bca7-88cb50238787",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1331,352 +1276,15 @@
       },
       {
         "cursor": {
-          "ref": "044e15ba-dca6-4b40-8aa3-d4f778be6f3a",
-          "length": 3,
+          "ref": "954a9dc1-a37e-4288-8938-55865350c553",
+          "length": 2,
           "cycles": 1,
           "position": 1,
           "iteration": 0,
-          "httpRequestId": "4ec4d6a1-8ba4-4874-8869-9fd600190818"
+          "httpRequestId": "a4af6d76-5a35-446c-b340-0fb3799bb46d"
         },
         "item": {
-          "id": "48c66bb2-9517-49ef-859c-1fd8d36096f5",
-          "name": "put call",
-          "request": {
-            "url": {
-              "protocol": "https",
-              "path": [
-                "todos",
-                "1"
-              ],
-              "host": [
-                "jsonplaceholder",
-                "typicode",
-                "com"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "PUT",
-            "body": {
-              "mode": "raw",
-              "raw": "  {\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"nannnn\",\r\n    \"completed\": true\r\n  }",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            }
-          },
-          "response": [],
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "257a6bc9-47fc-45c1-bda8-8d2df553e3c2",
-                "type": "text/javascript",
-                "packages": {},
-                "exec": [
-                  "// Test for successful 200 OK response\r",
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});\r",
-                  "// Test for specific status code\r",
-                  "\r",
-                  "pm.test(\"Status code is 201 Created\", function () {\r",
-                  "\r",
-                  "pm.response.to.have.status(201);\r",
-                  "\r",
-                  "});"
-                ],
-                "_lastExecutionId": "d4c084a4-b657-4eaa-9fea-cd41cca5c5b3"
-              }
-            }
-          ]
-        },
-        "request": {
-          "url": {
-            "protocol": "https",
-            "path": [
-              "todos",
-              "1"
-            ],
-            "host": [
-              "jsonplaceholder",
-              "typicode",
-              "com"
-            ],
-            "query": [],
-            "variable": []
-          },
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json",
-              "system": true
-            },
-            {
-              "key": "User-Agent",
-              "value": "PostmanRuntime/7.39.1",
-              "system": true
-            },
-            {
-              "key": "Accept",
-              "value": "*/*",
-              "system": true
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache",
-              "system": true
-            },
-            {
-              "key": "Postman-Token",
-              "value": "4486c3a6-6644-4cfd-926e-e77d2f698bb6",
-              "system": true
-            },
-            {
-              "key": "Host",
-              "value": "jsonplaceholder.typicode.com",
-              "system": true
-            },
-            {
-              "key": "Accept-Encoding",
-              "value": "gzip, deflate, br",
-              "system": true
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive",
-              "system": true
-            },
-            {
-              "key": "Content-Length",
-              "value": "87",
-              "system": true
-            }
-          ],
-          "method": "PUT",
-          "body": {
-            "mode": "raw",
-            "raw": "  {\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"nannnn\",\r\n    \"completed\": true\r\n  }",
-            "options": {
-              "raw": {
-                "language": "json"
-              }
-            }
-          }
-        },
-        "response": {
-          "id": "b137a502-66b6-4190-a8b8-7c9536f849f6",
-          "status": "OK",
-          "code": 200,
-          "header": [
-            {
-              "key": "Date",
-              "value": "Tue, 23 Sep 2025 09:27:02 GMT"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "key": "access-control-allow-credentials",
-              "value": "true"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache"
-            },
-            {
-              "key": "etag",
-              "value": "W/\"46-tZLTub5u86LyBd69gx38XeW/AX0\""
-            },
-            {
-              "key": "expires",
-              "value": "-1"
-            },
-            {
-              "key": "nel",
-              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
-            },
-            {
-              "key": "pragma",
-              "value": "no-cache"
-            },
-            {
-              "key": "report-to",
-              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=Iepw%2Fe10MFcLtU2rn7NWgpn2j%2BwPB2xiZn84Dzm2Yoc%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1758619622\"}],\"max_age\":3600}"
-            },
-            {
-              "key": "reporting-endpoints",
-              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=Iepw%2Fe10MFcLtU2rn7NWgpn2j%2BwPB2xiZn84Dzm2Yoc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1758619622\""
-            },
-            {
-              "key": "Server",
-              "value": "cloudflare"
-            },
-            {
-              "key": "vary",
-              "value": "Origin, Accept-Encoding"
-            },
-            {
-              "key": "via",
-              "value": "2.0 heroku-router"
-            },
-            {
-              "key": "x-content-type-options",
-              "value": "nosniff"
-            },
-            {
-              "key": "x-powered-by",
-              "value": "Express"
-            },
-            {
-              "key": "x-ratelimit-limit",
-              "value": "1000"
-            },
-            {
-              "key": "x-ratelimit-remaining",
-              "value": "999"
-            },
-            {
-              "key": "x-ratelimit-reset",
-              "value": "1758619648"
-            },
-            {
-              "key": "cf-cache-status",
-              "value": "DYNAMIC"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "br"
-            },
-            {
-              "key": "CF-RAY",
-              "value": "983901010c2df399-MAA"
-            },
-            {
-              "key": "alt-svc",
-              "value": "h3=\":443\"; ma=86400"
-            }
-          ],
-          "stream": {
-            "type": "Buffer",
-            "data": [
-              123,
-              10,
-              32,
-              32,
-              34,
-              117,
-              115,
-              101,
-              114,
-              73,
-              100,
-              34,
-              58,
-              32,
-              49,
-              44,
-              10,
-              32,
-              32,
-              34,
-              105,
-              100,
-              34,
-              58,
-              32,
-              49,
-              44,
-              10,
-              32,
-              32,
-              34,
-              116,
-              105,
-              116,
-              108,
-              101,
-              34,
-              58,
-              32,
-              34,
-              110,
-              97,
-              110,
-              110,
-              110,
-              110,
-              34,
-              44,
-              10,
-              32,
-              32,
-              34,
-              99,
-              111,
-              109,
-              112,
-              108,
-              101,
-              116,
-              101,
-              100,
-              34,
-              58,
-              32,
-              116,
-              114,
-              117,
-              101,
-              10,
-              125
-            ]
-          },
-          "cookie": [],
-          "responseTime": 286,
-          "responseSize": 70
-        },
-        "id": "48c66bb2-9517-49ef-859c-1fd8d36096f5",
-        "assertions": [
-          {
-            "assertion": "Status code is 200",
-            "skipped": false
-          },
-          {
-            "assertion": "Status code is 201 Created",
-            "skipped": false,
-            "error": {
-              "name": "AssertionError",
-              "index": 1,
-              "test": "Status code is 201 Created",
-              "message": "expected response to have status code 201 but got 200",
-              "stack": "AssertionError: expected response to have status code 201 but got 200\n   at Object.eval sandbox-script.js:2:2)"
-            }
-          }
-        ]
-      },
-      {
-        "cursor": {
-          "ref": "cef7b75f-4764-4147-aaa2-3b7471c968db",
-          "length": 3,
-          "cycles": 1,
-          "position": 2,
-          "iteration": 0,
-          "httpRequestId": "59cf1d82-5988-4f05-bab8-93ff592e26b9"
-        },
-        "item": {
-          "id": "ca3deeef-5405-406a-b686-561b9ced00c5",
+          "id": "eea84a96-01b0-4fa2-8e9f-72653056d806",
           "name": "demo",
           "request": {
             "url": {
@@ -1744,7 +1352,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "c287b4de-7ece-449e-ac31-be535be6e900",
+              "value": "632fe747-9bac-446b-8396-0ec35735c56b",
               "system": true
             },
             {
@@ -1780,7 +1388,7 @@
           }
         },
         "response": {
-          "id": "0e5bf9d9-00bd-45d4-adb5-78f47ea3bf57",
+          "id": "aa01deca-b424-4e4e-b37a-3c41dfbcbbe1",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1798,7 +1406,7 @@
             },
             {
               "key": "x-request-id",
-              "value": "70425a89-3d03-4298-9844-9346b5ae8aed"
+              "value": "3949f109-e9a5-41b1-9e33-2ca845771eb8"
             },
             {
               "key": "x-token-id",
@@ -1810,7 +1418,7 @@
             },
             {
               "key": "date",
-              "value": "Tue, 23 Sep 2025 09:27:03 GMT"
+              "value": "Wed, 24 Sep 2025 06:19:03 GMT"
             }
           ],
           "stream": {
@@ -1975,399 +1583,16 @@
             ]
           },
           "cookie": [],
-          "responseTime": 722,
+          "responseTime": 632,
           "responseSize": 156
         },
-        "id": "ca3deeef-5405-406a-b686-561b9ced00c5"
+        "id": "eea84a96-01b0-4fa2-8e9f-72653056d806"
       }
     ],
     "transfers": {
-      "responseTotal": 735
+      "responseTotal": 665
     },
-    "failures": [
-      {
-        "error": {
-          "name": "AssertionError",
-          "index": 1,
-          "test": "Status code is 201 Created",
-          "message": "expected response to have status code 201 but got 200",
-          "stack": "AssertionError: expected response to have status code 201 but got 200\n   at Object.eval sandbox-script.js:2:2)",
-          "checksum": "337252811c82a88cc9595b9632df7e14",
-          "id": "58cb4b72-c743-4c20-a165-1b71651e0511",
-          "timestamp": 1758619620878,
-          "stacktrace": [
-            {
-              "fileName": "sandbox-script.js",
-              "lineNumber": 2,
-              "functionName": "Object.eval",
-              "typeName": "Object",
-              "methodName": "eval",
-              "columnNumber": 2,
-              "native": false
-            }
-          ]
-        },
-        "at": "assertion:1 in test-script",
-        "source": {
-          "id": "48c66bb2-9517-49ef-859c-1fd8d36096f5",
-          "name": "put call",
-          "request": {
-            "url": {
-              "protocol": "https",
-              "path": [
-                "todos",
-                "1"
-              ],
-              "host": [
-                "jsonplaceholder",
-                "typicode",
-                "com"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "PUT",
-            "body": {
-              "mode": "raw",
-              "raw": "  {\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"nannnn\",\r\n    \"completed\": true\r\n  }",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            }
-          },
-          "response": [],
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "257a6bc9-47fc-45c1-bda8-8d2df553e3c2",
-                "type": "text/javascript",
-                "packages": {},
-                "exec": [
-                  "// Test for successful 200 OK response\r",
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});\r",
-                  "// Test for specific status code\r",
-                  "\r",
-                  "pm.test(\"Status code is 201 Created\", function () {\r",
-                  "\r",
-                  "pm.response.to.have.status(201);\r",
-                  "\r",
-                  "});"
-                ],
-                "_lastExecutionId": "d4c084a4-b657-4eaa-9fea-cd41cca5c5b3"
-              }
-            }
-          ]
-        },
-        "parent": {
-          "_": {
-            "postman_id": "e0664b36-8ef2-4f41-a943-98526225ea40",
-            "exporter_id": "48600896",
-            "collection_link": "https://nanthithad-655400.postman.co/workspace/Nanthitha-Devi's-Workspace~007b900c-17c1-4a98-8e75-57f3b1d97886/collection/48600896-e0664b36-8ef2-4f41-a943-98526225ea40?action=share&source=collection_link&creator=48600896"
-          },
-          "item": [
-            {
-              "id": "c4790993-4fa5-4f29-87a5-9f87674dd740",
-              "name": "Get data",
-              "request": {
-                "description": {
-                  "content": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.",
-                  "type": "text/plain"
-                },
-                "url": {
-                  "protocol": "https",
-                  "path": [
-                    "users",
-                    "1"
-                  ],
-                  "host": [
-                    "jsonplaceholder",
-                    "typicode",
-                    "com"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "GET"
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "5567242d-a302-42d9-8e89-f700839d290e",
-                    "type": "text/javascript",
-                    "packages": {},
-                    "exec": [
-                      "",
-                      "// Status code tests",
-                      "pm.test(\"Status code is 200\", function () {",
-                      "    pm.response.to.have.status(200);",
-                      "});",
-                      "",
-                      "pm.test(\"Response time under 2000ms\", function () {",
-                      "    pm.expect(pm.response.responseTime).to.be.below(2000);",
-                      "});",
-                      "",
-                      "// Header validation",
-                      "pm.test(\"Content-Type is application/json\", function () {",
-                      "    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
-                      "});",
-                      "",
-                      "// JSON structure validation",
-                      "pm.test(\"User response structure validation\", function () {",
-                      "    const user = pm.response.json();",
-                      "   ",
-                      "    pm.expect(user).to.be.an('object');",
-                      "    pm.expect(user).to.have.property('id');",
-                      "    pm.expect(user).to.have.property('name');",
-                      "    pm.expect(user).to.have.property('username');",
-                      "    pm.expect(user).to.have.property('email');",
-                      "    pm.expect(user).to.have.property('address');",
-                      "    pm.expect(user).to.have.property('phone');",
-                      "    pm.expect(user).to.have.property('website');",
-                      "    pm.expect(user).to.have.property('company');",
-                      "   ",
-                      "    // Validate data types",
-                      "    pm.expect(user.id).to.be.a('number');",
-                      "    pm.expect(user.name).to.be.a('string');",
-                      "    pm.expect(user.username).to.be.a('string');",
-                      "    pm.expect(user.email).to.be.a('string');",
-                      "    pm.expect(user.address).to.be.an('object');",
-                      "    pm.expect(user.phone).to.be.a('string');",
-                      "    pm.expect(user.website).to.be.a('string');",
-                      "    pm.expect(user.company).to.be.an('object');",
-                      "});",
-                      "",
-                      "// Data value validation",
-                      "pm.test(\"Email format is valid\", function () {",
-                      "    const user = pm.response.json();",
-                      "    pm.expect(user.email).to.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/);",
-                      "});",
-                      "",
-                      "pm.test(\"Website format is valid (domain check)\", function () {",
-                      "    const user = pm.response.json();",
-                      "    // Updated: Check for domain format instead of URL format",
-                      "    pm.expect(user.website).to.match(/^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\\.[a-zA-Z]{2,}$/);",
-                      "});",
-                      "",
-                      "pm.test(\"Phone format is valid\", function () {",
-                      "    const user = pm.response.json();",
-                      "    // Updated: Allow 'x' for extensions in phone numbers",
-                      "    pm.expect(user.phone).to.match(/^[\\d\\s\\-\\+\\(\\)\\.x]+$/);",
-                      "});",
-                      "",
-                      "// Nested object validation",
-                      "pm.test(\"Address structure validation\", function () {",
-                      "    const user = pm.response.json();",
-                      "    const address = user.address;",
-                      "   ",
-                      "    pm.expect(address).to.have.property('street');",
-                      "    pm.expect(address).to.have.property('suite');",
-                      "    pm.expect(address).to.have.property('city');",
-                      "    pm.expect(address).to.have.property('zipcode');",
-                      "    pm.expect(address).to.have.property('geo');",
-                      "   ",
-                      "    pm.expect(address.geo).to.have.property('lat');",
-                      "    pm.expect(address.geo).to.have.property('lng');",
-                      "   ",
-                      "    // Validate geo coordinates format",
-                      "    pm.expect(address.geo.lat).to.match(/^\\-?\\d+\\.\\d+$/);",
-                      "    pm.expect(address.geo.lng).to.match(/^\\-?\\d+\\.\\d+$/);",
-                      "});",
-                      "",
-                      "// Company structure validation",
-                      "pm.test(\"Company structure validation\", function () {",
-                      "    const user = pm.response.json();",
-                      "    const company = user.company;",
-                      "   ",
-                      "    pm.expect(company).to.have.property('name');",
-                      "    pm.expect(company).to.have.property('catchPhrase');",
-                      "    pm.expect(company).to.have.property('bs');",
-                      "   ",
-                      "    // Validate company data types",
-                      "    pm.expect(company.name).to.be.a('string');",
-                      "    pm.expect(company.catchPhrase).to.be.a('string');",
-                      "    pm.expect(company.bs).to.be.a('string');",
-                      "});",
-                      "",
-                      "// Specific value validation for known user",
-                      "pm.test(\"User ID 1 has expected values\", function () {",
-                      "    const user = pm.response.json();",
-                      "   ",
-                      "    if (user.id === 1) {",
-                      "        pm.expect(user.name).to.equal(\"Leanne Graham\");",
-                      "        pm.expect(user.username).to.equal(\"Bret\");",
-                      "        pm.expect(user.email).to.equal(\"Sincere@april.biz\");",
-                      "        pm.expect(user.phone).to.equal(\"1-770-736-8031 x56442\");",
-                      "        pm.expect(user.website).to.equal(\"hildegard.org\");",
-                      "    }",
-                      "});",
-                      "",
-                      "// Validate value ranges and patterns",
-                      "pm.test(\"User ID is positive number\", function () {",
-                      "    const user = pm.response.json();",
-                      "    pm.expect(user.id).to.be.above(0);",
-                      "});",
-                      "",
-                      "pm.test(\"Username is valid format\", function () {",
-                      "    const user = pm.response.json();",
-                      "    pm.expect(user.username).to.match(/^[a-zA-Z0-9_]+$/);",
-                      "});",
-                      "",
-                      "pm.test(\"Zipcode format is valid\", function () {",
-                      "    const user = pm.response.json();",
-                      "    // Basic zipcode validation (allows for different country formats)",
-                      "    pm.expect(user.address.zipcode).to.match(/^[a-zA-Z0-9\\- ]+$/);",
-                      "});",
-                      "",
-                      "// Extract data for future use",
-                      "pm.test(\"Extract user data\", function () {",
-                      "    const user = pm.response.json();",
-                      "    pm.environment.set(\"user_id\", user.id);",
-                      "    pm.environment.set(\"user_email\", user.email);",
-                      "    pm.environment.set(\"user_name\", user.name);",
-                      "   ",
-                      "    console.log(`Extracted user: ${user.name} (${user.email})`);",
-                      "    console.log(`User ID stored: ${pm.environment.get(\"user_id\")}`);",
-                      "});",
-                      "",
-                      "// Performance logging",
-                      "pm.test(\"Log performance metrics\", function () {",
-                      "    console.log(`Response time: ${pm.response.responseTime}ms`);",
-                      "    console.log(`Response size: ${pm.response.responseSize} bytes`);",
-                      "    console.log(`Status: ${pm.response.code} ${pm.response.status}`);",
-                      "});",
-                      "",
-                      "// Final summary",
-                      "pm.test(\"All validations completed\", function () {",
-                      "    console.log(\"✅ All user data validation tests executed\");",
-                      "});",
-                      "",
-                      ""
-                    ],
-                    "_lastExecutionId": "07628fe6-2022-441e-b252-ae8d2d129264"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "48c66bb2-9517-49ef-859c-1fd8d36096f5",
-              "name": "put call",
-              "request": {
-                "url": {
-                  "protocol": "https",
-                  "path": [
-                    "todos",
-                    "1"
-                  ],
-                  "host": [
-                    "jsonplaceholder",
-                    "typicode",
-                    "com"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"nannnn\",\r\n    \"completed\": true\r\n  }",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "257a6bc9-47fc-45c1-bda8-8d2df553e3c2",
-                    "type": "text/javascript",
-                    "packages": {},
-                    "exec": [
-                      "// Test for successful 200 OK response\r",
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "    pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "// Test for specific status code\r",
-                      "\r",
-                      "pm.test(\"Status code is 201 Created\", function () {\r",
-                      "\r",
-                      "pm.response.to.have.status(201);\r",
-                      "\r",
-                      "});"
-                    ],
-                    "_lastExecutionId": "d4c084a4-b657-4eaa-9fea-cd41cca5c5b3"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "ca3deeef-5405-406a-b686-561b9ced00c5",
-              "name": "demo",
-              "request": {
-                "url": {
-                  "protocol": "https",
-                  "path": [
-                    "2af28140-448e-4de3-9397-16a72475e34d"
-                  ],
-                  "host": [
-                    "webhook",
-                    "site"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "GET",
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"userId\": 1,\r\n    \"id\": 8,\r\n    \"title\": \"API Testing\",\r\n    \"completed\": true\r\n  }",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                }
-              },
-              "response": [],
-              "event": [],
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              }
-            }
-          ],
-          "event": [],
-          "variable": [],
-          "info": {
-            "_postman_id": "e0664b36-8ef2-4f41-a943-98526225ea40",
-            "name": "Collection run",
-            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-            "description": {
-              "content": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
-              "type": "text/plain"
-            }
-          }
-        },
-        "cursor": {
-          "ref": "044e15ba-dca6-4b40-8aa3-d4f778be6f3a",
-          "length": 3,
-          "cycles": 1,
-          "position": 1,
-          "iteration": 0,
-          "httpRequestId": "4ec4d6a1-8ba4-4874-8869-9fd600190818",
-          "scriptId": "257a6bc9-47fc-45c1-bda8-8d2df553e3c2",
-          "execution": "d4c084a4-b657-4eaa-9fea-cd41cca5c5b3"
-        }
-      }
-    ],
+    "failures": [],
     "error": null
   }
 }

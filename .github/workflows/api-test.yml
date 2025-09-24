@@ -17,7 +17,7 @@ jobs:
  
       - name: Run API Tests
         run: |
-          newman run run.postman_collection.json \
+          newman run run2.postman_collection.json \
             -e environment.json \
             -r cli,html \
             --reporter-html-export report.html
@@ -27,5 +27,3 @@ jobs:
         with:
           name: api-test-report
           path: html-report.html
- 
- 
